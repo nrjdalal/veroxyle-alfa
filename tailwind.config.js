@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   mode: 'jit',
@@ -19,7 +20,7 @@ module.exports = {
       gray: colors.gray,
       green: colors.green,
       indigo: colors.indigo,
-      lightBlue: colors.lightBlue,
+      // lightBlue: colors.lightBlue,
       lime: colors.lime,
       orange: colors.orange,
       pink: colors.pink,
@@ -34,7 +35,11 @@ module.exports = {
       white: colors.white,
       yellow: colors.yellow,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        barlow: ['Barlow', ...defaultTheme.fontFamily.serif],
+      },
+    },
   },
   variants: {
     extend: {},

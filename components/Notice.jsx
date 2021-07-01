@@ -4,7 +4,7 @@ const Notice = () => {
   return (
     <>
       <div className="bg-sky-600">
-        <div className="mod-container py-1.5 flex text-white text-sm items-center">
+        <div className="mod-container py-1.5 flex text-white items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
