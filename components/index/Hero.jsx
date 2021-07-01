@@ -33,8 +33,8 @@ const Hero = () => {
           </div>
           {/* h1 h2 button */}
           <div className="flex-1 md:ml-8">
-            <h1 className="font-semibold text-4xl lg:text-4xl mt-6 md:mt-0 text-gray-900">
-              Turing ideas to reality
+            <h1 className="font-semibold text-4xl mt-6 md:mt-0 text-gray-900">
+              Turning ideas to reality
               <br />
               via Design.
             </h1>
@@ -43,7 +43,7 @@ const Hero = () => {
               Our hardworking and dedicated team contribute to your project so
               that you can achieve all the goals you&apos;ve set for yourself.
             </h2>
-            <button className="bg-sky-500 text-white w-72 py-2.5 rounded-xl mt-8 text-lg tracking-wider hover:bg-sky-700">
+            <button className="bg-sky-500 text-white w-72 py-2.5 rounded-xl mt-8 text-lg tracking-wider hover:bg-sky-600">
               Contact Us
             </button>
           </div>
@@ -52,8 +52,11 @@ const Hero = () => {
       {/* Logos */}
       <div className="bg-sky-100 py-20">
         <div className="mod-container flex flex-col items-center">
-          <div className="flex flex-wrap justify-center gap-x-8 max-w-[640px]">
-            <div className="w-32 h-16 sm:w-40 sm:h-20">
+          <h1 className="font-medium text-xl mb-6 md:mt-0 text-sky-600">
+            Join the ranks of clients like:
+          </h1>
+          <div className="flex flex-wrap justify-center gap-x-8 w-[300px] sm:w-[600px] xl:w-full filter grayscale contrast-0">
+            <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
                 src="/images/brands/adobe-logo-vector.svg"
                 alt=""
@@ -62,7 +65,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 sm:w-40 sm:h-20">
+            <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
                 src="/images/brands/capital-one-logo-vector.svg"
                 alt=""
@@ -71,7 +74,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 sm:w-40 sm:h-20">
+            <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
                 src="/images/brands/fedex-logo-vector.svg"
                 alt=""
@@ -80,7 +83,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 sm:w-40 sm:h-20">
+            <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
                 src="/images/brands/godaddy-logo-vector.svg"
                 alt=""
@@ -89,18 +92,18 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 sm:w-40 sm:h-20">
+            <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
-                src="/images/brands/kayak-logo-vector.svg"
+                src="/images/brands/paypal-logo-vector.svg"
                 alt=""
                 width={160}
                 height={80}
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 sm:w-40 sm:h-20">
+            <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
-                src="/images/brands/paypal-logo-vector.svg"
+                src="/images/brands/xfinity-logo-vector.svg"
                 alt=""
                 width={160}
                 height={80}
