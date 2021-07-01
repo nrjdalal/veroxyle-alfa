@@ -8,8 +8,8 @@ const Hero = () => {
           <Image
             src="/images/index/hero.webp"
             alt=""
-            height={240}
-            width={240}
+            height={500}
+            width={500}
             objectFit="cover"
           />
         </div>
