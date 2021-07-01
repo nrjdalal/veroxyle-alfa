@@ -3,10 +3,10 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <>
-      <div className="relative bg-sky-200">
+      <div className="relative bg-sky-200 py-20">
         {/* Divider */}
         <svg
-          className="absolute bottom-0 h-3/4 w-full"
+          className="absolute -bottom-1 h-3/5 w-full"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -20,7 +20,7 @@ const Hero = () => {
           ></path>
         </svg>
         {/* Hero Section */}
-        <div className="relative mod-container flex flex-col md:flex-row md:items-center py-24">
+        <div className="relative mod-container flex flex-col md:flex-row md:items-center">
           {/* Image */}
           <div className="rounded-2xl w-36 h-36 md:w-72 md:h-72 overflow-hidden">
             <Image
@@ -43,9 +43,70 @@ const Hero = () => {
               Our hardworking and dedicated team contribute to your project so
               that you can achieve all the goals you&apos;ve set for yourself.
             </h2>
-            <button className="bg-sky-500 text-white w-72 py-2.5 rounded-xl mt-8 text-lg tracking-wider hover:bg-sky-900">
+            <button className="bg-sky-500 text-white w-72 py-2.5 rounded-xl mt-8 text-lg tracking-wider hover:bg-sky-700">
               Contact Us
             </button>
+          </div>
+        </div>
+      </div>
+      {/* Logos */}
+      <div className="bg-sky-100 py-20">
+        <div className="mod-container flex flex-col items-center">
+          <div className="flex flex-wrap justify-center gap-x-8 max-w-[640px]">
+            <div className="w-32 h-16 sm:w-40 sm:h-20">
+              <Image
+                src="/images/brands/adobe-logo-vector.svg"
+                alt=""
+                width={160}
+                height={80}
+                objectFit="contain"
+              />
+            </div>
+            <div className="w-32 h-16 sm:w-40 sm:h-20">
+              <Image
+                src="/images/brands/capital-one-logo-vector.svg"
+                alt=""
+                width={160}
+                height={80}
+                objectFit="contain"
+              />
+            </div>
+            <div className="w-32 h-16 sm:w-40 sm:h-20">
+              <Image
+                src="/images/brands/fedex-logo-vector.svg"
+                alt=""
+                width={160}
+                height={80}
+                objectFit="contain"
+              />
+            </div>
+            <div className="w-32 h-16 sm:w-40 sm:h-20">
+              <Image
+                src="/images/brands/godaddy-logo-vector.svg"
+                alt=""
+                width={160}
+                height={80}
+                objectFit="contain"
+              />
+            </div>
+            <div className="w-32 h-16 sm:w-40 sm:h-20">
+              <Image
+                src="/images/brands/kayak-logo-vector.svg"
+                alt=""
+                width={160}
+                height={80}
+                objectFit="contain"
+              />
+            </div>
+            <div className="w-32 h-16 sm:w-40 sm:h-20">
+              <Image
+                src="/images/brands/paypal-logo-vector.svg"
+                alt=""
+                width={160}
+                height={80}
+                objectFit="contain"
+              />
+            </div>
           </div>
         </div>
       </div>
