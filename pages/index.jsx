@@ -1,9 +1,9 @@
+import Hero from '../components/index/hero'
+
 const index = () => {
   return (
     <>
-      <div className="mod-container">
-        {/* <div className="bg-blue-300 h-20 w-full"></div> */}
-      </div>
+      <Hero />
     </>
   )
 }

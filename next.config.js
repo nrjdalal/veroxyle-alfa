@@ -1,4 +1,7 @@
 module.exports = {
-  pageExtensions: ['mdx', 'jsx', 'js', 'ts', 'tsx'],
+  pageExtensions: ['jsx'],
   reactStrictMode: true,
+  images: {
+    domains: ['source.unsplash.com'],
+  },
 }
