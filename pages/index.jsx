@@ -1,4 +1,4 @@
-import Hero from '../components/index/hero'
+import Hero from '../components/index/Hero'
 
 const index = () => {
   return (
