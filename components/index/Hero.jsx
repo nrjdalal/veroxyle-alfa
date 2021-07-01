@@ -19,9 +19,9 @@ const Hero = () => {
           and market later.
         </h1>
         <h2 className="text-lg sm:text-xl mt-4">
-          At VeroXyle and we love building great brands & digital experiences.
-          Our hardworking and dedicated team contribute to your project so that
-          you can achieve all the goals you&apos;ve set for yourself.
+          At VeroXyle we love building great brands & digital experiences. Our
+          hardworking and dedicated team contribute to your project so that you
+          can achieve all the goals you&apos;ve set for yourself.
         </h2>
       </div>
     </>
