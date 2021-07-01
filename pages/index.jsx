@@ -3,7 +3,9 @@ import Hero from '../components/index/Hero'
 const index = () => {
   return (
     <>
-      <Hero />
+      <div className="bg-sky-400 h-screen w-screen">
+        <Hero />
+      </div>
     </>
   )
 }
