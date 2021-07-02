@@ -2,10 +2,37 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Navbar = () => {
+  const Dropdown = (props) => {
+    return (
+      <>
+        <div className="flex items-center px-4 py-1 rounded font-medium hover:bg-white">
+          <span className="text-lg text-sky-900 tracking-widest">
+            {props.title}
+          </span>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4 ml-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </>
+    )
+  }
+
   return (
     <>
       <header className="bg-sky-300">
-        <div className="mod-container h-16 flex justify-between items-center">
+        <div className="mod-container h-16 flex justify-between items-center cursor-default">
           <Link href="/">
             <a className="md:pl-2">
               <Image
@@ -18,9 +45,19 @@ const Navbar = () => {
             </a>
           </Link>
 
+          <nav className="hidden lg:flex lg:flex-row mr-[-0.5rem]">
+            <Dropdown title="About" />
+            <Dropdown title="Services" />
+            <Dropdown title="Work" />
+            <Dropdown title="Blog" />
+            <button className="text-lg text-sky-900 tracking-widest mx-4 px-4 bg-white rounded font-medium">
+              Contact
+            </button>
+          </nav>
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-white"
+            className="h-8 w-8 text-sky-900 lg:hidden"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -29,7 +66,7 @@ const Navbar = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              d="M4 6h16M4 12h8m-8 6h16"
             />
           </svg>
         </div>

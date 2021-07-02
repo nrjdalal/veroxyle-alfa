@@ -44,7 +44,7 @@ const Hero = () => {
               that you can achieve all the goals you&apos;ve set for yourself.
             </h2>
             <button className="bg-sky-500 text-white w-72 py-2.5 rounded-xl mt-8 text-lg tracking-wider hover:bg-sky-600">
-              Contact Us
+              Let&apos;s Talk
             </button>
           </div>
         </div>
