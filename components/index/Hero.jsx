@@ -76,7 +76,7 @@ const Hero = () => {
             </div>
             <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
-                src="/images/brands/fedex-logo-vector.svg"
+                src="/images/brands/google-logo-vector.svg"
                 alt=""
                 width={160}
                 height={80}
@@ -85,7 +85,7 @@ const Hero = () => {
             </div>
             <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
-                src="/images/brands/godaddy-logo-vector.svg"
+                src="/images/brands/netflix-logo-vector.svg"
                 alt=""
                 width={160}
                 height={80}
@@ -94,7 +94,7 @@ const Hero = () => {
             </div>
             <div className="w-32 h-16 md:w-40 md:h-20">
               <Image
-                src="/images/brands/paypal-logo-vector.svg"
+                src="/images/brands/pdffiller-logo-vector.svg"
                 alt=""
                 width={160}
                 height={80}
