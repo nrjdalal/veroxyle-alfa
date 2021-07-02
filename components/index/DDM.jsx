@@ -2,6 +2,21 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const DDM = () => {
+  const Cards = (props) => {
+    return (
+      <>
+        <div className="w-full max-w-xs bg-white p-5 rounded-lg shadow-md">
+          <div className="h-16 w-16 bg-sky-900 rounded-full overflow-hidden"></div>
+          <h1 className="mt-6 text-2xl font-medium">{props.title}</h1>
+          <p className="mt-4 mb-2">{props.children}</p>
+          <Link href="/">
+            <a className="underline">Learn More</a>
+          </Link>
+        </div>
+      </>
+    )
+  }
+
   return (
     <>
       <section className="relative w-full bg-sky-200 overflow-x-hidden py-20">
@@ -24,39 +39,18 @@ const DDM = () => {
         <div className="relative mod-container flex flex-col items-center">
           <h1 className="font-medium text-xl text-sky-600">What we do?</h1>
           <div className="flex flex-wrap mt-12 w-full justify-center gap-8">
-            <div className="w-full max-w-xs bg-white p-5 rounded-lg shadow-md">
-              <div className="h-16 w-16 bg-sky-900 rounded-full overflow-hidden"></div>
-              <h1 className="mt-6 text-2xl font-medium">Design</h1>
-              <p className="mt-4 mb-2">
-                Accept Payments using Payment Gateway, Payment Pages, Payment
-                Links and much more.
-              </p>
-              <Link href="/">
-                <a className="underline">Learn More</a>
-              </Link>
-            </div>
-            <div className="w-full max-w-xs bg-white p-5 rounded-lg shadow-md">
-              <div className="h-16 w-16 bg-sky-900 rounded-full overflow-hidden"></div>
-              <h1 className="mt-6 text-2xl font-medium">Develop</h1>
-              <p className="mt-4 mb-2">
-                Simplify, accelerate, and automate every aspect of your banking
-                operations.
-              </p>
-              <Link href="/">
-                <a className="underline">Learn More</a>
-              </Link>
-            </div>
-            <div className="w-full max-w-xs bg-white p-5 rounded-lg shadow-md">
-              <div className="h-16 w-16 bg-sky-900 rounded-full overflow-hidden"></div>
-              <h1 className="mt-6 text-2xl font-medium">Market</h1>
-              <p className="mt-4 mb-2">
-                Get payments within 12 working hours & never have a shortfall of
-                working capital.
-              </p>
-              <Link href="/">
-                <a className="underline">Learn More</a>
-              </Link>
-            </div>
+            <Cards title="Designing">
+              Accept Payments using Payment Gateway, Payment Pages, Payment
+              Links and much more.
+            </Cards>
+            <Cards title="Development">
+              Simplify, accelerate, and automate every aspect of your banking
+              operations.
+            </Cards>
+            <Cards title="Marketing">
+              Get payments within 12 working hours & never have a shortfall of
+              working capital.
+            </Cards>
           </div>
         </div>
       </section>

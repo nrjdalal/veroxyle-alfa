@@ -5,14 +5,14 @@ const Navbar = () => {
   const Deskdown = (props) => {
     return (
       <>
-        <div className="flex items-center px-4 py-1 rounded font-medium hover:bg-white">
-          <span className="text-lg text-sky-900 tracking-widest">
+        <div className="flex items-center px-4 py-1 rounded hover:bg-sky-500">
+          <span className="text-lg text-white tracking-widest">
             {props.title}
           </span>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 ml-1"
+            className="h-4 w-4 ml-1 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <>
       {/* <div className="relative"> */}
-      <header className="sticky top-0 z-10 bg-sky-300 border-b-2 border-gray-900 border-opacity-5">
+      <header className="sticky top-0 z-10 bg-sky-800 border-opacity-5">
         <div className="mod-container h-16 flex justify-between items-center cursor-default">
           <Link href="/">
             <a className="md:pl-2 pt-2">
@@ -58,7 +58,7 @@ const Navbar = () => {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-sky-900 lg:hidden"
+            className="h-8 w-8 text-sky-200 lg:hidden"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Notice = () => {
   return (
     <>
-      <div className="bg-sky-600  border-b-2 border-gray-900 border-opacity-5">
+      <div className="bg-sky-600 border-b-2 border-gray-900 border-opacity-5">
         <div className="mod-container py-1.5 flex justify-between">
           <div className="flex text-white items-center">
             <svg
