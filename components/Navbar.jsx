@@ -1,17 +1,23 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
     <>
       <header className="bg-sky-300">
         <div className="mod-container h-16 flex justify-between items-center">
-          <Image
-            src="/logo.svg"
-            alt=""
-            width={196}
-            height={100}
-            objectFit="contain"
-          />
+          <Link href="/">
+            <a className="md:pl-2">
+              <Image
+                src="/logo.svg"
+                alt=""
+                width={216}
+                height={36}
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8 text-white"
