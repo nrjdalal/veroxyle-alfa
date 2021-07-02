@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Navbar = () => {
-  const Dropdown = (props) => {
+  const Deskdown = (props) => {
     return (
       <>
         <div className="flex items-center px-4 py-1 rounded font-medium hover:bg-white">
@@ -31,10 +31,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-sky-300">
+      {/* <div className="relative"> */}
+      <header className="sticky top-0 z-10 bg-sky-300 border-b-2 border-gray-900 border-opacity-5">
         <div className="mod-container h-16 flex justify-between items-center cursor-default">
           <Link href="/">
-            <a className="md:pl-2">
+            <a className="md:pl-2 pt-2">
               <Image
                 src="/logo.svg"
                 alt=""
@@ -45,13 +46,13 @@ const Navbar = () => {
             </a>
           </Link>
 
-          <nav className="hidden lg:flex lg:flex-row mr-[-0.5rem]">
-            <Dropdown title="About" />
-            <Dropdown title="Services" />
-            <Dropdown title="Work" />
-            <Dropdown title="Blog" />
-            <button className="text-lg text-sky-900 tracking-widest mx-4 px-4 bg-white rounded font-medium">
-              Contact
+          <nav className="hidden lg:flex mr-[-0.5rem]">
+            <Deskdown title="About" />
+            <Deskdown title="Services" />
+            <Deskdown title="Work" />
+            <Deskdown title="Blog" />
+            <button className="text-white tracking-widest mx-4 px-4 bg-sky-500 hover:bg-sky-600 rounded">
+              CONTACT
             </button>
           </nav>
 
@@ -71,6 +72,7 @@ const Navbar = () => {
           </svg>
         </div>
       </header>
+      {/* </div> */}
     </>
   )
 }
