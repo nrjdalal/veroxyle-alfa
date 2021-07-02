@@ -56,7 +56,7 @@ const Hero = () => {
             Join the ranks of clients like:
           </h1>
           <div className="flex flex-wrap justify-center gap-x-8 w-[300px] sm:w-[600px] xl:w-full filter grayscale contrast-0">
-            <div className="w-32 h-16 md:w-40 md:h-20">
+            <div className="w-32 h-16">
               <Image
                 src="/images/brands/adobe-logo-vector.svg"
                 alt=""
@@ -65,7 +65,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 md:w-40 md:h-20">
+            <div className="w-32 h-16">
               <Image
                 src="/images/brands/capital-one-logo-vector.svg"
                 alt=""
@@ -74,7 +74,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 md:w-40 md:h-20">
+            <div className="w-32 h-16">
               <Image
                 src="/images/brands/google-logo-vector.svg"
                 alt=""
@@ -83,7 +83,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 md:w-40 md:h-20">
+            <div className="w-32 h-16">
               <Image
                 src="/images/brands/netflix-logo-vector.svg"
                 alt=""
@@ -92,7 +92,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 md:w-40 md:h-20">
+            <div className="w-32 h-16">
               <Image
                 src="/images/brands/pdffiller-logo-vector.svg"
                 alt=""
@@ -101,7 +101,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="w-32 h-16 md:w-40 md:h-20">
+            <div className="w-32 h-16">
               <Image
                 src="/images/brands/xfinity-logo-vector.svg"
                 alt=""
