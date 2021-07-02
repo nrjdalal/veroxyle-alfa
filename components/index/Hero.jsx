@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <>
-      <div className="relative bg-sky-200 py-20">
+      <section className="relative bg-sky-200 py-20">
         {/* Divider */}
         <svg
           className="absolute -bottom-1 h-3/5 w-full"
@@ -48,71 +48,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-      </div>
-      {/* Logos */}
-      <div className="bg-sky-100 py-20">
-        <div className="mod-container flex flex-col items-center">
-          <h1 className="font-medium text-xl mb-6 md:mt-0 text-sky-600">
-            Join the ranks of clients like:
-          </h1>
-          <div className="flex flex-wrap justify-center gap-x-8 w-[300px] sm:w-[600px] xl:w-full filter grayscale contrast-0">
-            <div className="w-32 h-16">
-              <Image
-                src="/images/brands/adobe-logo-vector.svg"
-                alt=""
-                width={160}
-                height={80}
-                objectFit="contain"
-              />
-            </div>
-            <div className="w-32 h-16">
-              <Image
-                src="/images/brands/capital-one-logo-vector.svg"
-                alt=""
-                width={160}
-                height={80}
-                objectFit="contain"
-              />
-            </div>
-            <div className="w-32 h-16">
-              <Image
-                src="/images/brands/google-logo-vector.svg"
-                alt=""
-                width={160}
-                height={80}
-                objectFit="contain"
-              />
-            </div>
-            <div className="w-32 h-16">
-              <Image
-                src="/images/brands/netflix-logo-vector.svg"
-                alt=""
-                width={160}
-                height={80}
-                objectFit="contain"
-              />
-            </div>
-            <div className="w-32 h-16">
-              <Image
-                src="/images/brands/pdffiller-logo-vector.svg"
-                alt=""
-                width={160}
-                height={80}
-                objectFit="contain"
-              />
-            </div>
-            <div className="w-32 h-16">
-              <Image
-                src="/images/brands/xfinity-logo-vector.svg"
-                alt=""
-                width={160}
-                height={80}
-                objectFit="contain"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   )
 }
