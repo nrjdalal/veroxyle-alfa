@@ -5,7 +5,7 @@ const DDM = () => {
   const Cards = (props) => {
     return (
       <>
-        <div className="w-full max-w-xs bg-white p-5 rounded-lg shadow-md">
+        <div className="w-full max-w-xs bg-gray-50 p-5 rounded-lg shadow-md">
           <div className="h-16 w-16 bg-sky-900 rounded-full overflow-hidden"></div>
           <h1 className="mt-6 text-2xl font-medium">{props.title}</h1>
           <p className="mt-4 mb-2">{props.children}</p>
