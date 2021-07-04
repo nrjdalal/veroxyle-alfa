@@ -1,8 +1,8 @@
-import '../styles/globals.css'
+import 'styles/globals.css'
 
 // Global imports
-import Notice from '../components/Notice'
-import Navbar from '../components/Navbar'
+import Notice from 'components/Notice'
+import Navbar from 'components/Navbar'
 
 function MyApp({ Component, pageProps }) {
   return (
