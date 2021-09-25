@@ -1,6 +1,7 @@
 import Clients from 'components/index/Clients'
 import DDM from 'components/index/DDM'
 import Hero from 'components/index/Hero'
+import { Container } from 'components/veroui/react'
 
 const index = () => {
   return (
@@ -8,6 +9,7 @@ const index = () => {
       <Hero />
       <Clients />
       <DDM />
+      <Container>Hello</Container>
     </>
   )
 }
